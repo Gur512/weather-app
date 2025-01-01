@@ -30,6 +30,7 @@ const weatherIcons = {
   "Drizzle": "./assets/imgs/drizzle.png",
   "Mist": "./assets/imgs/mist.png",
   "Snow": "./assets/imgs/snow.png",
+  "Thunderstorm": "./assets/imgs/thunderstorm.png"
 };
 
 async function checkWeather(city) { 
@@ -40,13 +41,13 @@ async function checkWeather(city) {
     weather.style.display = "none";
   } else {
     let data = await response.json();
-
+    console.log(data);
     cityName.innerText = data.name;
     temp.innerText = Math.round(data.main.temp) + "°C";
     humidity.innerText = data.main.humidity + "%";
     wind.innerText = data.wind.speed + "km/h";
   
-    weatherIcon.src = weatherIcons[data.weather[0].main] || "./assets/imgs/default.png"; 
+    weatherIcon.src = weatherIcons[data.weather[0].main] || "./assets/imgs/clouds.png"; 
 
     error.style.display = "none";
     weather.style.display = "block";

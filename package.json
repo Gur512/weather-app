@@ -1,0 +1,19 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A sleek and interactive Weather App that provides current weather updates, temperature, wind speed.",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Gurpreet",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
