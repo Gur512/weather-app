@@ -18,7 +18,6 @@ const nextDayTemp = utils.selectAll('.next-day-temp');
 const nextDayDates = utils.selectAll('.next-day-date');
 serachBox.value = "";
 
-
 const apiKey = "3c7cd185f37c4056814ca5f548e68bc0";
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?units=metric&q=";
@@ -100,3 +99,4 @@ utils.listen('click', searchBtn, () => {
 utils.listen('load', window, () => {
   serachBox.focus();
 });
+
